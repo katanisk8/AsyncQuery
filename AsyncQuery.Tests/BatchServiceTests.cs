@@ -35,7 +35,7 @@ namespace AsyncQuery.Tests
         {
             // Arrange
             var actualCollection = new List<Item>();
-            var expectedCollection = Enumerable.Range(0, 100).Select(x => new Item { Id = x }).ToList(); // TODO: Mock this collection to pass unit this test
+            var expectedCollection = Enumerable.Range(0, 100).Select(x => new Item { Id = x }).ToList(); // TODO: Mock this collection to pass this unit test
             var query = expectedCollection.AsQueryable().OrderBy(x => x.Id);
 
             // Act
